@@ -1,4 +1,16 @@
-function valideForm() {
+
+// Задание 1
+const str1 = `He said, 'I've never been to London.' I said: 'I don't like fruit'!`;
+str1.replace(/'/g, `"`);
+
+// Задание 2 Два случая, знак препинания до и после кавычек
+const str2 = `He said, 'I've never been to London.' I said: 'I don't like fruit'!`; // .до кавычек и !после
+str2.replace(/('\B)|(\B')/g, `"`);
+
+
+// Задание 3
+
+function validateForm() {
     var expName = /\w+\s\w+/gi;
     var expPhone = /^\+\d{1,3}\(\d{3}\)\d{3}-\d{4}$/;
     var expMail = /^[\w]{1}[\w-\.]+@[\w-]+\.[a-z]{2,11}$/i;
@@ -33,4 +45,4 @@ function valideForm() {
     }
 
 }
-document.querySelector('.button').addEventListener("click", valideForm);
+document.querySelector('.button').addEventListener("click", validateForm);
