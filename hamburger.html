@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Фастфуд</title>
+</head>
+
+<body>
+<style>
+    #calculator {
+        margin: 0 auto;
+        width: 1000px;
+        text-align: center;
+    }
+</style>
+
+<div id="calculator">
+    <label> Размер:
+        <select id="size">
+            <option value="small">Маленький</option>
+            <option value="big">Большой</option>
+        </select>
+    </label>
+    <label> Начинка:
+        <select id="filling">
+            <option value="cheese">C cыром</option>
+            <option value="salad">С салатом</option>
+            <option value="potatoes">С картофелем</option>
+        </select>
+    </label>
+    <label> Посыпать приправой?
+        <select id="flavoring">
+            <option value="flavoring">Да</option>
+            <option value="no">Нет</option>
+        </select>
+    </label>
+        <label> Полить майонезом?
+            <select id="mayo">
+                <option value="mayo">Да</option>
+                <option value="no">Нет</option>
+            </select>
+        </label>
+    <button id="submit">Посчитай</button>
+    <div id="price"></div>
+    <div id="calories"></div>
+</div>
+<script src="scripthamburger.js"></script>
+</body>
+</html>

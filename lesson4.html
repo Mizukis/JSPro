@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link rel="stylesheet" href="style4.css">
+    <script src="lesson4.js" async></script>
+</head>
+<body>
+<div class="form">
+    <h2>Написать письмо</h2>
+    <label id="name">Ваше Имя:
+        <input type="text" name="name" placeholder="Иван Иванов">
+        <span class="error">Введите Ваше Имя и Фамилию через пробел</span>
+    </label>
+    <label id="phone">Ваш номер телефона:
+        <input type="tel" name="phone" placeholder="+7(000)000-0000">
+        <span class="error">Введите телефон в формате +7(000)000-0000</span>
+    </label>
+    <label id="email">Ваш e-mail:
+        <input type="email" name="email" placeholder="e-mail">
+        <span class="error">Введите ваш e-mail mymail@mail.ru</span>
+    </label>
+    <label id="message">
+        <textarea placeholder="Ваше сообщение" name="message"></textarea>
+        <span class="error">Введите ваш e-mail mymail@mail.ru</span>
+    </label>
+    <p>* Все поля обязательны для заполнения</p>
+    <button class="button">Отправить</button>
+</div>
+</body>
+</html>
